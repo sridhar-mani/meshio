@@ -531,10 +531,6 @@ def translate_cells(connectivity, offset, types, cell_data_raw):
             idx += num_nodes
             meshio_type = vtk_to_meshio_type[vtk_type]
             cells.setdefault(meshio_type, []).append(nodes)
-
-    # Process cell data if necessary
-    # ...
-
     return cells, cell_data
 
 
